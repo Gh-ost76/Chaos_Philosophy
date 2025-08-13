@@ -11,31 +11,33 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Truth Beyond Veils" />
   <meta property="og:description" content="Dark philosophy, samurai discipline, and power dynamics — explored without illusion." />
-  <meta property="og:image" content="https://wallpapers.com/images/featured/red-samurai-warrior-emerging-from-darkness.jpg" />
+  <meta property="og:image" content="https://img.freepik.com/premium-ai-image/samurai-standing-forest-red-moon-background-digital-art_12345678.jpg?w=1200" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Truth Beyond Veils" />
   <meta name="twitter:description" content="Dark philosophy, samurai discipline, and power dynamics — explored without illusion." />
-  <meta name="twitter:image" content="https://wallpapers.com/images/featured/red-samurai-warrior-emerging-from-darkness.jpg" />
+  <meta name="twitter:image" content="https://img.freepik.com/premium-ai-image/samurai-standing-forest-red-moon-background-digital-art_12345678.jpg?w=1200" />
 
   <link rel="canonical" href="/" />
-  <link rel="preconnect" href="https://wallpapers.com" crossorigin>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
   <style>
     body { background: #0b0b0b; color: #d1d1d1; }
     .gold { color: #c4a35a; }
     .btn-outline { border: 1px solid #c4a35a; color: #c4a35a; padding: .5rem 1rem; border-radius: .5rem; }
     .btn-outline:hover { background: #c4a35a; color: #0b0b0b; transition: all .2s; }
-    .overlay { background: linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.85) 60%, rgba(0,0,0,0.92) 100%); }
   </style>
 </head>
 <body class="font-serif">
+
+  <!-- Hero Section -->
   <header class="relative h-screen w-full overflow-hidden">
-    <img src="https://wallpapers.com/images/featured/red-samurai-warrior-emerging-from-darkness.jpg" 
-         alt="Samurai emerging from darkness" 
-         class="absolute inset-0 w-full h-full object-cover" loading="eager">
-    <div class="overlay absolute inset-0"></div>
+    <img src="https://img.freepik.com/premium-ai-image/samurai-standing-forest-red-moon-background-digital-art_12345678.jpg?w=1920"
+         alt="Samurai silhouette in a forest with a red moon"
+         class="absolute inset-0 w-full h-full object-cover"
+         loading="eager">
+    <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.88) 60%, rgba(0,0,0,0.95) 100%);"></div>
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
       <h1 class="text-5xl md:text-6xl font-extrabold tracking-wide text-white mb-6">Truth Beyond Veils</h1>
       <p id="quote" class="text-lg md:text-xl max-w-3xl text-gray-300 italic"></p>
@@ -45,6 +47,7 @@
     </div>
   </header>
 
+  <!-- Categories -->
   <main id="categories" class="max-w-7xl mx-auto px-6 py-16">
     <h2 class="text-3xl font-bold text-center mb-12">Explore the Realms</h2>
     <div id="category-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
@@ -54,6 +57,7 @@
     <p>&copy; 2025 Truth Beyond Veils — Philosophy Unchained.</p>
   </footer>
 
+  <!-- Scripts -->
   <script>
     const quotes = [
       "He who has a why to live can bear almost any how. — Friedrich Nietzsche",
@@ -87,6 +91,7 @@
     }
     loadCategories();
   </script>
+
 </body>
 </html>
 
