@@ -6,39 +6,35 @@
   <title>Truth Beyond Veils</title>
   <meta name="description" content="Dark philosophy, samurai discipline, and power dynamics — explored without illusion." />
   <meta name="theme-color" content="#0b0b0b" />
+
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Truth Beyond Veils" />
   <meta property="og:description" content="Dark philosophy, samurai discipline, and power dynamics — explored without illusion." />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1500048993953-d23a436266cf?q=80&w=1920&auto=format&fit=crop" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
+  <meta property="og:image" content="https://wallpapers.com/images/featured/red-samurai-warrior-emerging-from-darkness.jpg" />
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Truth Beyond Veils" />
   <meta name="twitter:description" content="Dark philosophy, samurai discipline, and power dynamics — explored without illusion." />
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1500048993953-d23a436266cf?q=80&w=1920&auto=format&fit=crop" />
+  <meta name="twitter:image" content="https://wallpapers.com/images/featured/red-samurai-warrior-emerging-from-darkness.jpg" />
+
   <link rel="canonical" href="/" />
-  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="preconnect" href="https://wallpapers.com" crossorigin>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
     body { background: #0b0b0b; color: #d1d1d1; }
     .gold { color: #c4a35a; }
     .btn-outline { border: 1px solid #c4a35a; color: #c4a35a; padding: .5rem 1rem; border-radius: .5rem; }
     .btn-outline:hover { background: #c4a35a; color: #0b0b0b; transition: all .2s; }
-    .overlay { background: linear-gradient(180deg, rgba(0,0,0,.65) 0%, rgba(0,0,0,.75) 60%, rgba(0,0,0,.85) 100%);}
+    .overlay { background: linear-gradient(180deg, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.85) 60%, rgba(0,0,0,0.92) 100%); }
   </style>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Truth Beyond Veils",
-    "description": "Dark philosophy, samurai discipline, and power dynamics — explored without illusion.",
-    "url": "/"
-  }
-  </script>
 </head>
 <body class="font-serif">
   <header class="relative h-screen w-full overflow-hidden">
-    <img src="https://images.unsplash.com/photo-1500048993953-d23a436266cf?q=80&w=1920&auto=format&fit=crop" alt="Samurai in silhouette" class="absolute inset-0 w-full h-full object-cover" loading="eager">
+    <img src="https://wallpapers.com/images/featured/red-samurai-warrior-emerging-from-darkness.jpg" 
+         alt="Samurai emerging from darkness" 
+         class="absolute inset-0 w-full h-full object-cover" loading="eager">
     <div class="overlay absolute inset-0"></div>
     <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
       <h1 class="text-5xl md:text-6xl font-extrabold tracking-wide text-white mb-6">Truth Beyond Veils</h1>
@@ -48,13 +44,16 @@
       </div>
     </div>
   </header>
+
   <main id="categories" class="max-w-7xl mx-auto px-6 py-16">
     <h2 class="text-3xl font-bold text-center mb-12">Explore the Realms</h2>
     <div id="category-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
   </main>
+
   <footer class="border-t border-gray-800 py-8 text-center text-sm text-gray-500">
     <p>&copy; 2025 Truth Beyond Veils — Philosophy Unchained.</p>
   </footer>
+
   <script>
     const quotes = [
       "He who has a why to live can bear almost any how. — Friedrich Nietzsche",
@@ -65,6 +64,7 @@
       "Whoever fights monsters should see to it that he does not become a monster. — Friedrich Nietzsche"
     ];
     document.getElementById('quote').textContent = quotes[Math.floor(Math.random()*quotes.length)];
+
     async function loadCategories() {
       const res = await fetch('categories.json');
       const categories = await res.json();
@@ -74,7 +74,8 @@
         a.href = cat.slug + '/';
         a.className = "relative block rounded-xl overflow-hidden group shadow-lg";
         a.innerHTML = `
-          <img src="${cat.image}" alt="${cat.name}" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-300" loading="lazy">
+          <img src="${cat.image}" alt="${cat.name}" 
+               class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-300" loading="lazy">
           <div class="absolute inset-0 bg-black bg-opacity-60 group-hover:bg-opacity-40 transition"></div>
           <div class="relative z-10 p-6 flex flex-col justify-end h-64">
             <h3 class="text-2xl font-bold text-white mb-2">${cat.name}</h3>
@@ -88,3 +89,4 @@
   </script>
 </body>
 </html>
+
