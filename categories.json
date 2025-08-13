@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Psychology & Philosophy",
+    "slug": "psychology-philosophy",
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1600&auto=format&fit=crop",
+    "description": "Jungian depth, existentialism, nihilism \u2014 the inner mechanics of mind and meaning."
+  },
+  {
+    "name": "Power & Strategy",
+    "slug": "power-strategy",
+    "image": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?q=80&w=1600&auto=format&fit=crop",
+    "description": "Machiavelli, realpolitik, and the harsh calculus of influence."
+  },
+  {
+    "name": "Warrior Mindset & Discipline",
+    "slug": "warrior-discipline",
+    "image": "https://images.unsplash.com/photo-1601758125946-6ec2ef642b0d?q=80&w=1600&auto=format&fit=crop",
+    "description": "Bushido, training, and the ruthless elegance of self-mastery."
+  }
+]

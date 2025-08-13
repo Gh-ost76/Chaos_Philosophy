@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Mental Mastery",
+    "slug": "mental-mastery",
+    "image": "https://images.unsplash.com/photo-1601758125946-6ec2ef642b0d?q=80&w=1200&auto=format&fit=crop",
+    "description": "Placeholder article in the Focus series."
+  },
+  {
+    "title": "Clear Planning",
+    "slug": "clear-planning",
+    "image": "https://images.unsplash.com/photo-1601758125946-6ec2ef642b0d?q=80&w=1200&auto=format&fit=crop",
+    "description": "Placeholder article in the Focus series."
+  },
+  {
+    "title": "Comfort Prison",
+    "slug": "comfort-prison",
+    "image": "https://images.unsplash.com/photo-1601758125946-6ec2ef642b0d?q=80&w=1200&auto=format&fit=crop",
+    "description": "Placeholder article in the Focus series."
+  },
+  {
+    "title": "Senshin-do: The Ancient Art of Unbreakable Focus",
+    "slug": "senshindo",
+    "image": "https://images.unsplash.com/photo-1601758125946-6ec2ef642b0d?q=80&w=1200&auto=format&fit=crop",
+    "description": "Samurai-style focus training and modern discipline methods."
+  },
+  {
+    "title": "Upcoming Article",
+    "slug": "placeholder1",
+    "image": "https://images.unsplash.com/photo-1601758125946-6ec2ef642b0d?q=80&w=1200&auto=format&fit=crop",
+    "description": "This post will be published soon."
+  }
+]

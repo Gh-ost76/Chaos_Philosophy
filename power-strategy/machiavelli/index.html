@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Man Who Doesn't Need Anyone: Machiavelli's Dark Truth</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: #2d3748;
+        }
+        .serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .red-gradient {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+        }
+        .shadow-custom {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .film-grain::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 25% 25%, rgba(255,255,255,.1) 0%, transparent 50%),
+                radial-gradient(circle at 75% 75%, rgba(0,0,0,.1) 0%, transparent 50%);
+            background-size: 20px 20px, 30px 30px;
+            pointer-events: none;
+            opacity: 0.3;
+        }
+        .vintage-border {
+            border: 3px solid;
+            border-image: linear-gradient(45deg, #8b5a3c, #d4af37, #8b5a3c) 1;
+        }
+        .reason-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid #dc2626;
+        }
+        .reason-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 25px 30px -5px rgba(0, 0, 0, 0.15);
+        }
+        .silhouette {
+            background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+            clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+        }
+        .clockwork::before {
+            content: '\f013';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            position: absolute;
+            font-size: 2rem;
+            color: rgba(220, 38, 38, 0.2);
+            animation: spin 10s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .chain-link {
+            width: 20px;
+            height: 20px;
+            border: 3px solid #dc2626;
+            border-radius: 50%;
+            position: relative;
+        }
+        .chain-link::before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            border: 2px solid #dc2626;
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            left: 8px;
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header Section -->
+    <header class="gradient-bg text-white relative overflow-hidden">
+        <div class="film-grain"></div>
+        <div class="max-w-7xl mx-auto px-6 py-16 relative z-10">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-7xl font-bold serif mb-6 leading-tight">
+                    The Man Who<br>
+                    <span class="text-yellow-300">Doesn't Need Anyone</span>
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">
+                    Society's Greatest Warning: Machiavelli's Dark Truth
+                </p>
+                <div class="flex justify-center items-center space-x-4 text-lg">
+                    <div class="silhouette w-12 h-12"></div>
+                    <span>Philosophical Analysis Report</span>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-red-600 via-yellow-500 to-red-600"></div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <!-- Executive Summary -->
+        <section class="mb-16">
+            <div class="bg-white rounded-2xl shadow-custom p-8 vintage-border relative overflow-hidden">
+                <div class="clockwork absolute top-4 right-4"></div>
+                <h2 class="text-3xl font-bold serif mb-6 text-gray-800">Executive Summary</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <p class="text-lg mb-4 leading-relaxed">
+                            Niccolò Machiavelli's political philosophy reveals a profound truth about power dynamics: the most dangerous individual to any system is not the rebel or criminal, but the person who cannot be controlled. This analysis examines the philosophical concept of the independent man who represents society's greatest warning.
+                        </p>
+                        <p class="text-lg leading-relaxed">
+                            Through sophisticated visual metaphors and symbolic imagery, this study explores why genuine independence threatens the fundamental structures of social control that civilization depends upon.
+                        </p>
+                    </div>
+                    <div class="bg-red-50 p-6 rounded-xl border-l-4 border-red-500">
+                        <h3 class="font-semibold text-red-800 mb-3 flex items-center">
+                            <i class="fas fa-exclamation-triangle mr-2"></i>
+                            Core Thesis
+                        </h3>
+                        <p class="text-red-700">
+                            "The man who simply doesn't need what the system offers represents something far more threatening than organized resistance - he embodies the terrifying possibility that the entire structure of social control might be unnecessary."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visual Analysis -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold serif mb-8 text-center text-gray-800">Visual Metaphor Analysis</h2>
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 relative overflow-hidden">
+                    <div class="film-grain"></div>
+                    <div class="relative z-10">
+                        <div class="w-16 h-16 silhouette mx-auto mb-4"></div>
+                        <h3 class="font-semibold text-lg mb-3 text-center">The Silhouette</h3>
+                        <p class="text-sm text-gray-600 text-center">
+                            Represents the archetypal independent man - universal and unidentifiable, emphasizing the concept over the individual
+                        </p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 relative">
+                    <div class="clockwork mb-4 mx-auto w-16 h-16 flex items-center justify-center text-4xl text-red-600"></div>
+                    <h3 class="font-semibold text-lg mb-3 text-center">Clockwork Society</h3>
+                    <p class="text-sm text-gray-600 text-center">
+                        Society visualized as a complex machine where individuals are mere cogs, trapped in cycles of obligation and dependency
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center">
+                    <div class="flex justify-center mb-4">
+                        <div class="chain-link"></div>
+                    </div>
+                    <h3 class="font-semibold text-lg mb-3">Broken Chains</h3>
+                    <p class="text-sm text-gray-600">
+                        Symbols of liberation from manufactured dependencies, representing the painful but necessary break from social control
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Five Reasons -->
+        <section class="mb-16">
+            <h2 class="text-4xl font-bold serif mb-8 text-center text-gray-800">Five Reasons Why Independence Threatens Society</h2>
+            
+            <!-- Reason 1 -->
+            <div class="reason-card bg-white rounded-xl shadow-lg p-8 mb-8 relative">
+                <div class="flex items-start space-x-6">
+                    <div class="red-gradient text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">1</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold serif mb-4 text-gray-800">Immunity to Control Mechanisms</h3>
+                        <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                            <blockquote class="italic text-lg text-gray-700 mb-2">
+                                "Men are so simple and so much inclined to obey immediate needs that a deceiver will never lack victims."
+                            </blockquote>
+                            <cite class="text-sm text-gray-500">- Niccolò Machiavelli</cite>
+                        </div>
+                        <p class="text-lg mb-4 leading-relaxed">
+                            Control operates through two basic mechanisms: the carrot and the stick. Promise people what they want or threaten to take away what they need. The independent man has no exploitable weaknesses because he has learned to live comfortably on less and doesn't require constant validation from others.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-red-800 mb-2">Traditional Vulnerabilities</h4>
+                                <ul class="text-red-700 space-y-1 text-sm">
+                                    <li>• Desperate need for money</li>
+                                    <li>• Fear of social rejection</li>
+                                    <li>• Job security anxiety</li>
+                                    <li>• Need for constant validation</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-green-800 mb-2">Independent Man's Immunity</h4>
+                                <ul class="text-green-700 space-y-1 text-sm">
+                                    <li>• Lives comfortably on less</li>
+                                    <li>• Comfortable with solitude</li>
+                                    <li>• Self-reliant skills</li>
+                                    <li>• Internal validation system</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reason 2 -->
+            <div class="reason-card bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="flex items-start space-x-6">
+                    <div class="red-gradient text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">2</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold serif mb-4 text-gray-800">The Power of Walking Away</h3>
+                        <p class="text-lg mb-4 leading-relaxed">
+                            Machiavelli understood that the most powerful position in any negotiation is not needing the deal to work out. Modern society has systematically eliminated this position of strength through elaborate systems of dependency: student loans, mortgages, social expectations, and consumer culture.
+                        </p>
+                        <div class="bg-yellow-50 p-6 rounded-lg mb-4">
+                            <h4 class="font-semibold text-yellow-800 mb-3">The Nuclear Option</h4>
+                            <p class="text-yellow-700">
+                                The independent man has maintained his ability to walk away from any situation - job, relationship, social group, or entire lifestyle. This genuine indifference to outcomes creates an asymmetry of power that drives others to distraction.
+                            </p>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="text-center">
+                                <div class="bg-red-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
+                                    <i class="fas fa-heart-broken text-red-600"></i>
+                                </div>
+                                <h5 class="font-semibold text-sm">Romantic Relations</h5>
+                                <p class="text-xs text-gray-600">Responds to threats with equanimity</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
+                                    <i class="fas fa-briefcase text-blue-600"></i>
+                                </div>
+                                <h5 class="font-semibold text-sm">Employment</h5>
+                                <p class="text-xs text-gray-600">Makes decisions based on values</p>
+                            </div>
+                            <div class="text-center">
+                                <div class="bg-green-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-2">
+                                    <i class="fas fa-users text-green-600"></i>
+                                </div>
+                                <h5 class="font-semibold text-sm">Social Groups</h5>
+                                <p class="text-xs text-gray-600">Participates on own terms</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reason 3 -->
+            <div class="reason-card bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="flex items-start space-x-6">
+                    <div class="red-gradient text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">3</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold serif mb-4 text-gray-800">Genuine vs. Performed Scarcity</h3>
+                        <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                            <blockquote class="italic text-lg text-gray-700 mb-2">
+                                "Everyone sees what you appear to be. Few experience what you really are."
+                            </blockquote>
+                            <cite class="text-sm text-gray-500">- Niccolò Machiavelli</cite>
+                        </div>
+                        <p class="text-lg mb-4 leading-relaxed">
+                            Most people perform scarcity - playing hard to get, following dating strategies, creating artificial unavailability. The independent man possesses actual scarcity because he genuinely has boundaries about how he spends his time and energy.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-red-50 p-6 rounded-lg border border-red-200">
+                                <h4 class="font-semibold text-red-800 mb-3 flex items-center">
+                                    <i class="fas fa-theater-masks mr-2"></i>
+                                    Performed Scarcity
+                                </h4>
+                                <ul class="text-red-700 space-y-2 text-sm">
+                                    <li>• Following manipulation techniques</li>
+                                    <li>• Creating artificial unavailability</li>
+                                    <li>• Desperately needy underneath</li>
+                                    <li>• Calculating appearances</li>
+                                </ul>
+                            </div>
+                            <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                                <h4 class="font-semibold text-blue-800 mb-3 flex items-center">
+                                    <i class="fas fa-gem mr-2"></i>
+                                    Genuine Scarcity
+                                </h4>
+                                <ul class="text-blue-700 space-y-2 text-sm">
+                                    <li>• Natural boundaries and selectivity</li>
+                                    <li>• Thoughtful allocation of resources</li>
+                                    <li>• Comfortable with own company</li>
+                                    <li>• Authentic self-valuation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reason 4 -->
+            <div class="reason-card bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="flex items-start space-x-6">
+                    <div class="red-gradient text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">4</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold serif mb-4 text-gray-800">Living Proof of Alternative Possibilities</h3>
+                        <p class="text-lg mb-4 leading-relaxed">
+                            His mere existence becomes a living reminder of what genuine independence looks like, creating profound psychological discomfort for people who have built their entire identity around needing others.
+                        </p>
+                        <div class="bg-purple-50 p-6 rounded-lg mb-6">
+                            <h4 class="font-semibold text-purple-800 mb-3">The Mirror Effect</h4>
+                            <p class="text-purple-700 mb-4">
+                                He serves as a mirror that reflects back people's own dependencies and limitations. Most people don't like what they see in that reflection.
+                            </p>
+                            <div class="grid md:grid-cols-3 gap-4 text-sm">
+                                <div>
+                                    <h5 class="font-semibold text-purple-800">Identity Recognition</h5>
+                                    <p class="text-purple-600">Built around needing others' approval</p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-purple-800">Decision Drivers</h5>
+                                    <p class="text-purple-600">Fear rather than genuine desire</p>
+                                </div>
+                                <div>
+                                    <h5 class="font-semibold text-purple-800">Life Orientation</h5>
+                                    <p class="text-purple-600">Living for others rather than themselves</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-amber-50 p-4 rounded-lg border-l-4 border-amber-500">
+                            <p class="text-amber-800 font-medium">
+                                <i class="fas fa-lightbulb mr-2"></i>
+                                Key Insight: He represents proof that dependencies aren't inevitable natural laws of human existence, but choices that could potentially be changed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reason 5 -->
+            <div class="reason-card bg-white rounded-xl shadow-lg p-8 mb-8">
+                <div class="flex items-start space-x-6">
+                    <div class="red-gradient text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-xl flex-shrink-0">5</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold serif mb-4 text-gray-800">Independent Moral Compass</h3>
+                        <div class="bg-gray-50 p-6 rounded-lg mb-4">
+                            <blockquote class="italic text-lg text-gray-700 mb-2">
+                                "Since love and fear can hardly exist together, if we must choose between them, it is far safer to be feared than loved."
+                            </blockquote>
+                            <cite class="text-sm text-gray-500">- Niccolò Machiavelli</cite>
+                        </div>
+                        <p class="text-lg mb-4 leading-relaxed">
+                            But this man has discovered a third option: being neither desperately loved nor strategically feared, but respected for his authenticity and consistency. He has developed his own moral compass based on personal values rather than social expectations.
+                        </p>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div class="bg-red-50 p-6 rounded-lg">
+                                <h4 class="font-semibold text-red-800 mb-3">Social Morality</h4>
+                                <ul class="text-red-700 space-y-2 text-sm">
+                                    <li>• Control mechanisms disguised as ethics</li>
+                                    <li>• "Good people do this"</li>
+                                    <li>• "If you really cared, you would..."</li>
+                                    <li>• Ensures predictability and control</li>
+                                </ul>
+                            </div>
+                            <div class="bg-green-50 p-6 rounded-lg">
+                                <h4 class="font-semibold text-green-800 mb-3">Personal Ethics</h4>
+                                <ul class="text-green-700 space-y-2 text-sm">
+                                    <li>• Genuine, thoughtful moral framework</li>
+                                    <li>• Based on own values and experiences</li>
+                                    <li>• Consults internal judgment</li>
+                                    <li>• Immune to guilt manipulation</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="bg-indigo-50 p-6 rounded-lg">
+                            <h4 class="font-semibold text-indigo-800 mb-3">The Terrifying Questions</h4>
+                            <p class="text-indigo-700 mb-3">
+                                What if people started making their own decisions about how to live? What if they stopped outsourcing their moral judgments to external authorities?
+                            </p>
+                            <p class="text-indigo-600 text-sm italic">
+                                "The entire structure of social control through manufactured guilt and artificial moral obligations would collapse."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Ultimate Warning -->
+        <section class="mb-16">
+            <div class="bg-gradient-to-r from-gray-900 to-red-900 text-white rounded-2xl p-12 relative overflow-hidden">
+                <div class="film-grain"></div>
+                <div class="relative z-10">
+                    <h2 class="text-4xl font-bold serif mb-8 text-center">The Ultimate Warning</h2>
+                    <div class="max-w-4xl mx-auto">
+                        <p class="text-xl mb-6 leading-relaxed text-center">
+                            The real warning isn't about what the independent man might do to disrupt society. He's generally too content with his own life to spend energy trying to change others.
+                        </p>
+                        <div class="bg-black bg-opacity-30 p-8 rounded-xl mb-8">
+                            <h3 class="text-2xl font-bold mb-4 text-yellow-300 text-center">The Contagion of Independence</h3>
+                            <p class="text-lg leading-relaxed text-center">
+                                The warning is about what happens when his example spreads. When people begin to understand that most limitations they accept as unchangeable facts are actually self-imposed constraints that could be questioned and potentially modified.
+                            </p>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-6 text-center">
+                            <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                                <i class="fas fa-link text-3xl mb-4 text-yellow-400"></i>
+                                <h4 class="font-semibold mb-2">Manufactured Dependencies</h4>
+                                <p class="text-sm">Recognition of artificial constraints</p>
+                            </div>
+                            <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                                <i class="fas fa-eye text-3xl mb-4 text-yellow-400"></i>
+                                <h4 class="font-semibold mb-2">Awareness Spreading</h4>
+                                <p class="text-sm">Critical mass of independent thinking</p>
+                            </div>
+                            <div class="bg-white bg-opacity-10 p-6 rounded-lg">
+                                <i class="fas fa-balance-scale text-3xl mb-4 text-yellow-400"></i>
+                                <h4 class="font-semibold mb-2">Power Shift</h4>
+                                <p class="text-sm">Social control landscape transformation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Questions for Reflection -->
+        <section class="mb-16">
+            <div class="bg-white rounded-2xl shadow-custom p-8">
+                <h2 class="text-3xl font-bold serif mb-8 text-center text-gray-800">Critical Questions for Reflection</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="p-6 bg-blue-50 rounded-xl border-l-4 border-blue-500">
+                            <h3 class="font-semibold text-blue-800 mb-2">Professional Life</h3>
+                            <p class="text-blue-700 text-sm">
+                                What would you choose to do for work if you weren't trying to impress your parents, maintain a certain lifestyle, or compete for status and recognition?
+                            </p>
+                        </div>
+                        <div class="p-6 bg-purple-50 rounded-xl border-l-4 border-purple-500">
+                            <h3 class="font-semibold text-purple-800 mb-2">Relationships</h3>
+                            <p class="text-purple-700 text-sm">
+                                What relationships would you maintain if you weren't afraid of being alone, worried about others' opinions, or desperate for validation?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-green-50 rounded-xl border-l-4 border-green-500">
+                            <h3 class="font-semibold text-green-800 mb-2">Time & Energy</h3>
+                            <p class="text-green-700 text-sm">
+                                How would you choose to spend your time and energy if you stopped trying to meet expectations you never consciously agreed to fulfill?
+                            </p>
+                        </div>
+                        <div class="p-6 bg-orange-50 rounded-xl border-l-4 border-orange-500">
+                            <h3 class="font-semibold text-orange-800 mb-2">Authentic Self</h3>
+                            <p class="text-orange-700 text-sm">
+                                What would you stop doing if you weren't afraid of disappointing people who haven't earned the right to be disappointed in your choices?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="mb-12">
+            <div class="bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-2xl p-12 text-center">
+                <h2 class="text-4xl font-bold serif mb-6">Machiavellian Truth Revealed</h2>
+                <div class="max-w-4xl mx-auto">
+                    <p class="text-xl mb-8 leading-relaxed">
+                        The most dangerous person in any system is the one who doesn't need the system to survive and thrive. This person doesn't have to remain a rare exception to the rule of human dependency.
+                    </p>
+                    <div class="gold-gradient text-black p-8 rounded-xl font-semibold">
+                        <p class="text-lg">
+                            "Maybe people don't need to be governed, managed, and controlled as much as those in power need people to believe they do."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="flex justify-center items-center space-x-4 mb-4">
+                <div class="silhouette w-8 h-8"></div>
+                <span class="text-lg font-semibold">Philosophical Analysis</span>
+            </div>
+            <p class="text-gray-400">
+                An examination of Machiavelli's insights on independence and social control mechanisms
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
+

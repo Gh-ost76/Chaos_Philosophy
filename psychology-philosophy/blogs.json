@@ -1,0 +1,14 @@
+[
+  {
+    "title": "The Rich Inner World of Introverts",
+    "slug": "introverts",
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop",
+    "description": "Jungian depth psychology and the power of solitude."
+  },
+  {
+    "title": "Upcoming Article",
+    "slug": "placeholder1",
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=1200&auto=format&fit=crop",
+    "description": "This post will be published soon."
+  }
+]

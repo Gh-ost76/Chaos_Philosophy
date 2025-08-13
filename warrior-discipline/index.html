@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warrior Mindset & Discipline — Truth Beyond Veils</title>
+  <meta name="description" content="Bushido, training, and the ruthless elegance of self-mastery.">
+  <meta name="theme-color" content="#0b0b0b">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Warrior Mindset & Discipline — Truth Beyond Veils">
+  <meta property="og:description" content="Bushido, training, and the ruthless elegance of self-mastery.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1601758125946-6ec2ef642b0d?q=80&w=1600&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Warrior Mindset & Discipline — Truth Beyond Veils">
+  <meta name="twitter:description" content="Bushido, training, and the ruthless elegance of self-mastery.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1601758125946-6ec2ef642b0d?q=80&w=1600&auto=format&fit=crop">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>body{background:#0b0b0b;color:#d1d1d1}</style>
+</head>
+<body class="font-serif">
+  <header class="relative h-72 md:h-96">
+    <img src="https://images.unsplash.com/photo-1601758125946-6ec2ef642b0d?q=80&w=1600&auto=format&fit=crop" alt="Warrior Mindset & Discipline" class="absolute inset-0 w-full h-full object-cover" loading="eager">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
+      <h1 class="text-4xl md:text-5xl font-bold">Warrior Mindset & Discipline</h1>
+      <p class="text-gray-300 mt-3 max-w-3xl">Bushido, training, and the ruthless elegance of self-mastery.</p>
+    </div>
+  </header>
+  <main class="max-w-7xl mx-auto px-6 py-16">
+    <div id="blog-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+  </main>
+  <footer class="border-t border-gray-800 py-8 text-center text-sm text-gray-500">
+    <a href="../" class="underline">← Back to Categories</a>
+  </footer>
+  <script>
+    async function loadBlogs(){
+      const res = await fetch('blogs.json');
+      const blogs = await res.json();
+      const grid = document.getElementById('blog-grid');
+      blogs.forEach(b=>{
+        const a = document.createElement('a');
+        a.href = b.slug + '/';
+        a.className = "relative block rounded-xl overflow-hidden group shadow-lg";
+        a.innerHTML = `
+          <img src="${b.image}" alt="${b.title}" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition duration-300" loading="lazy">
+          <div class="absolute inset-0 bg-black bg-opacity-60 group-hover:bg-opacity-40 transition"></div>
+          <div class="relative z-10 p-6 flex flex-col justify-end h-64">
+            <h3 class="text-xl font-bold text-white mb-2">${b.title}</h3>
+            <p class="text-gray-300 text-sm">${b.description}</p>
+          </div>
+        `;
+        grid.appendChild(a);
+      });
+    }
+    loadBlogs();
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "The Man Who Doesn't Need Anyone: Machiavelli's Dark Truth",
+    "slug": "machiavelli",
+    "image": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?q=80&w=1200&auto=format&fit=crop",
+    "description": "On independence, leverage, and control through Machiavellian lenses."
+  },
+  {
+    "title": "Wisdom of the Demonic Path",
+    "slug": "demonic-path",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop",
+    "description": "Survival, power dynamics, and the ruthless art of self-reinvention."
+  },
+  {
+    "title": "Upcoming Article",
+    "slug": "placeholder1",
+    "image": "https://images.unsplash.com/photo-1543349689-9a4d426bee8e?q=80&w=1200&auto=format&fit=crop",
+    "description": "This post will be published soon."
+  }
+]
