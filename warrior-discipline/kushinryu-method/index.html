@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kushinryu: The Ancient System for Becoming Addicted to Hard Things</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .shadow-custom {
+            box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .bg-gradient-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .bg-gradient-secondary {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .bg-gradient-tertiary {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        .bg-gradient-quaternary {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+        
+        .bg-gradient-quinary {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+        
+        .pillar-card {
+            transition: all 0.3s ease;
+            transform: translateY(0);
+        }
+        
+        .pillar-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #667eea, transparent);
+            margin: 3rem 0;
+        }
+        
+        .philosophy-quote {
+            position: relative;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .philosophy-quote::before {
+            content: '"';
+            font-size: 4rem;
+            color: #667eea;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .ancient-symbol {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem;
+        }
+        
+        .progress-indicator {
+            height: 4px;
+            background: rgba(102, 126, 234, 0.2);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+            transition: width 2s ease;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .shadow-custom {
+                box-shadow: none;
+                border: 1px solid #e5e7eb;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="relative min-h-screen flex items-center justify-center px-4 py-8">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="absolute inset-0" style="background-image: url('https://i.ytimg.com/vi/Rb8R6oEQ2yg/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBxoDYlH0gpwLcXv4Iesx4a_3Abtw'); background-size: cover; background-position: center; filter: blur(3px);"></div>
+        
+        <div class="relative z-10 text-center text-white max-w-6xl mx-auto">
+            <div class="ancient-symbol mx-auto mb-8" style="width: 100px; height: 100px; font-size: 2.5rem;">
+                <i class="fas fa-yin-yang"></i>
+            </div>
+            
+            <h1 class="serif-font text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Kushinryu
+            </h1>
+            
+            <div class="text-xl md:text-2xl mb-8 font-light">
+                <span class="block mb-2">苦新流</span>
+                <span class="text-lg opacity-90">The Ancient System for Becoming Addicted to Hard Things</span>
+            </div>
+            
+            <div class="max-w-4xl mx-auto mb-12">
+                <p class="text-lg md:text-xl mb-6 leading-relaxed">
+                    A revolutionary three-pillar system that transforms painful effort into automatic action by combining ancient Eastern principles of <strong>Kushin</strong> (painful joy) and <strong>Ryu</strong> (natural flow).
+                </p>
+                
+                <div class="philosophy-quote">
+                    <p class="text-lg italic pl-8">
+                        Becoming addicted to hard things happens when you stop negotiating with yourself about what needs to be done.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 border border-white border-opacity-20">
+                    <i class="fas fa-brain text-3xl mb-4 text-blue-300"></i>
+                    <h3 class="font-semibold mb-2">Neural Rewiring</h3>
+                    <p class="text-sm opacity-90">Transform your relationship with difficulty</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 border border-white border-opacity-20">
+                    <i class="fas fa-water text-3xl mb-4 text-green-300"></i>
+                    <h3 class="font-semibold mb-2">Effortless Flow</h3>
+                    <p class="text-sm opacity-90">Action without internal resistance</p>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-6 border border-white border-opacity-20">
+                    <i class="fas fa-mountain text-3xl mb-4 text-purple-300"></i>
+                    <h3 class="font-semibold mb-2">Ancient Wisdom</h3>
+                    <p class="text-sm opacity-90">2000+ years of Eastern philosophy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="bg-white">
+        <!-- Part 1: The Pleasure Disease -->
+        <section class="py-16 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="ancient-symbol bg-gradient-secondary mb-6">
+                        <i class="fas fa-virus"></i>
+                    </div>
+                    <h2 class="serif-font text-4xl md:text-5xl font-bold gradient-text mb-6">
+                        Part I: The Pleasure Disease
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        How modern society has hijacked your brain's reward system without your permission
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">The Hijacked Brain</h3>
+                        <div class="space-y-6">
+                            <div class="bg-red-50 border-l-4 border-red-400 p-6 rounded-r-lg">
+                                <h4 class="font-semibold text-red-800 mb-2">Modern Reality</h4>
+                                <p class="text-red-700">Every app employs neuroscientists whose only job is to make you need the next hit. Your reward system has become a slot machine.</p>
+                            </div>
+                            
+                            <div class="bg-blue-50 border-l-4 border-blue-400 p-6 rounded-r-lg">
+                                <h4 class="font-semibold text-blue-800 mb-2">Ancient Design</h4>
+                                <p class="text-blue-700">Your brain evolved for: Effort → Reward. Pain first, pleasure second. That was the only formula that existed.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 p-6 bg-gray-50 rounded-lg">
+                            <h4 class="font-semibold mb-4 flex items-center">
+                                <i class="fas fa-exclamation-triangle text-yellow-500 mr-2"></i>
+                                The Broken Sequence
+                            </h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="text-center">
+                                    <div class="bg-green-100 text-green-800 p-3 rounded-lg mb-2">
+                                        <strong>Ancient Formula</strong>
+                                    </div>
+                                    <div class="text-sm">Pain → Pleasure</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="bg-red-100 text-red-800 p-3 rounded-lg mb-2">
+                                        <strong>Modern Reality</strong>
+                                    </div>
+                                    <div class="text-sm">Instant Pleasure</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="bg-gradient-secondary text-white rounded-2xl p-8 shadow-custom">
+                            <h3 class="text-2xl font-bold mb-6">The Gohan Case Study</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <div class="bg-white bg-opacity-20 rounded-full p-2 mt-1">
+                                        <i class="fas fa-mobile-alt text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">Morning Choice</p>
+                                        <p class="text-sm opacity-90">Scrolled phone while neighbor ran at 5 AM</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <div class="bg-white bg-opacity-20 rounded-full p-2 mt-1">
+                                        <i class="fas fa-utensils text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">Lunch Decision</p>
+                                        <p class="text-sm opacity-90">Ordered delivery while others trained at gym</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start space-x-3">
+                                    <div class="bg-white bg-opacity-20 rounded-full p-2 mt-1">
+                                        <i class="fas fa-tv text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-medium">Evening Choice</p>
+                                        <p class="text-sm opacity-90">Netflix instead of martial arts class</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-6 pt-6 border-t border-white border-opacity-20">
+                                    <p class="font-bold text-lg">Six Months Later:</p>
+                                    <ul class="text-sm space-y-1 mt-2">
+                                        <li>• Couldn't climb 3 flights of stairs</li>
+                                        <li>• Focus fractured after 20 minutes</li>
+                                        <li>• Confidence evaporated in meetings</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 text-white rounded-2xl p-8 shadow-custom">
+                    <h3 class="text-2xl font-bold mb-6 text-center">The Disease Symptoms</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="bg-red-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-brain text-2xl"></i>
+                            </div>
+                            <h4 class="font-semibold mb-2">Atrophied Capacity</h4>
+                            <p class="text-sm text-gray-300">Ability to handle difficulty shrinks to nothing</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="bg-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-battery-quarter text-2xl"></i>
+                            </div>
+                            <h4 class="font-semibold mb-2">Depleted Receptors</h4>
+                            <p class="text-sm text-gray-300">Constant mediocre pleasures leave you empty</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-chains text-2xl"></i>
+                            </div>
+                            <h4 class="font-semibold mb-2">Domestication</h4>
+                            <p class="text-sm text-gray-300">Comfortable people consume and comply</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Part 2: The Resistance Paradox -->
+        <section class="py-16 px-4 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="ancient-symbol bg-gradient-tertiary mb-6">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h2 class="serif-font text-4xl md:text-5xl font-bold gradient-text mb-6">
+                        Part II: The Resistance Paradox
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Why willpower fails and the physics of discipline
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                    <div class="bg-white rounded-2xl p-8 shadow-custom">
+                        <h3 class="text-2xl font-bold mb-6 text-red-600">The Force Approach</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-exclamation-circle text-red-500"></i>
+                                <span>"I have to work out" = Creates enemy</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-fire text-orange-500"></i>
+                                <span>Willpower burns glucose like rocket fuel</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-battery-empty text-red-500"></i>
+                                <span>Depletes faster than it replenishes</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-cycle text-red-500"></i>
+                                <span>Sprint → Burnout → Quit → Repeat</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 p-4 bg-red-50 rounded-lg">
+                            <h4 class="font-semibold text-red-800 mb-2">Newton's Law Applied</h4>
+                            <p class="text-red-700">For every action, there's an equal and opposite reaction. Push harder against your nature, it pushes back harder.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-8 shadow-custom">
+                        <h3 class="text-2xl font-bold mb-6 text-blue-600">The Wu Wei Approach</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-water text-blue-500"></i>
+                                <span>"I get to train" = Creates opportunity</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-leaf text-green-500"></i>
+                                <span>Aligns with natural forces</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-infinity text-blue-500"></i>
+                                <span>Sustainable energy flow</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-arrow-up text-green-500"></i>
+                                <span>Curiosity → Exploration → Growth</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 p-4 bg-blue-50 rounded-lg">
+                            <h4 class="font-semibold text-blue-800 mb-2">Water Philosophy</h4>
+                            <p class="text-blue-700">Water doesn't fight the rock - it finds the path of least resistance and flows. Given time, water dissolves the rock completely.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="philosophy-quote bg-white">
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-4">The Transformation Principle</h3>
+                        <p class="text-lg mb-6">
+                            "I'm curious how much stronger I can get today" vs "I have to train"
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <h4 class="font-semibold text-red-600 mb-2">Obligation Energy</h4>
+                                <ul class="text-left space-y-1 text-gray-700">
+                                    <li>• Creates internal resistance</li>
+                                    <li>• Burns willpower rapidly</li>
+                                    <li>• Feels like imprisonment</li>
+                                    <li>• Generates war with self</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-green-600 mb-2">Curiosity Energy</h4>
+                                <ul class="text-left space-y-1 text-gray-700">
+                                    <li>• Removes internal friction</li>
+                                    <li>• Sustainable energy source</li>
+                                    <li>• Feels like exploration</li>
+                                    <li>• Creates partnership with self</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Part 3: The Painful Joy -->
+        <section class="py-16 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="ancient-symbol bg-gradient-quaternary mb-6">
+                        <i class="fas fa-lotus"></i>
+                    </div>
+                    <h2 class="serif-font text-4xl md:text-5xl font-bold gradient-text mb-6">
+                        Part III: Kushin - The Painful Joy
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Transforming pain from enemy to teacher through reinterpretation
+                    </p>
+                </div>
+                
+                <div class="mb-16">
+                    <div class="bg-gradient-primary text-white rounded-2xl p-8 shadow-custom">
+                        <h3 class="text-2xl font-bold mb-6 text-center">The Wisdom Equation</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+                            <div>
+                                <div class="bg-white bg-opacity-20 rounded-lg p-6 mb-4">
+                                    <i class="fas fa-user-clock text-4xl mb-4"></i>
+                                    <h4 class="font-bold text-xl">70-Year-Old "Safe" Life</h4>
+                                    <p class="text-sm mt-2 opacity-90">Never pushed hard, never made waves, never really suffered</p>
+                                </div>
+                                <div class="text-center">
+                                    <span class="text-lg font-semibold">= Limited Wisdom</span>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <div class="bg-white bg-opacity-20 rounded-lg p-6 mb-4">
+                                    <i class="fas fa-fire text-4xl mb-4"></i>
+                                    <h4 class="font-bold text-xl">30-Year-Old Battle-Tested</h4>
+                                    <p class="text-sm mt-2 opacity-90">Built companies that failed, fought battles, experienced loss</p>
+                                </div>
+                                <div class="text-center">
+                                    <span class="text-lg font-semibold">= Deep Wisdom</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 text-center">
+                            <p class="text-xl font-semibold">
+                                Wisdom doesn't come from time. It comes from pain transformed into understanding.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                    <div class="bg-white rounded-2xl p-6 shadow-custom pillar-card">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-dumbbell text-3xl text-blue-500 mb-4"></i>
+                            <h3 class="font-bold text-xl">Physical Transformation</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-red-50 p-3 rounded-lg">
+                                <p class="font-medium text-red-800">Old Interpretation:</p>
+                                <p class="text-sm text-red-600">Muscle burn = Weakness leaving</p>
+                            </div>
+                            <div class="flex justify-center">
+                                <i class="fas fa-arrow-down text-2xl text-gray-400"></i>
+                            </div>
+                            <div class="bg-green-50 p-3 rounded-lg">
+                                <p class="font-medium text-green-800">New Interpretation:</p>
+                                <p class="text-sm text-green-600">Muscle burn = Strength arriving</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-6 shadow-custom pillar-card">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-lungs text-3xl text-purple-500 mb-4"></i>
+                            <h3 class="font-bold text-xl">Cardiovascular Growth</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-red-50 p-3 rounded-lg">
+                                <p class="font-medium text-red-800">Old Interpretation:</p>
+                                <p class="text-sm text-red-600">Gasping for air = Suffering</p>
+                            </div>
+                            <div class="flex justify-center">
+                                <i class="fas fa-arrow-down text-2xl text-gray-400"></i>
+                            </div>
+                            <div class="bg-green-50 p-3 rounded-lg">
+                                <p class="font-medium text-green-800">New Interpretation:</p>
+                                <p class="text-sm text-green-600">Gasping for air = Expansion</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-6 shadow-custom pillar-card">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-brain text-3xl text-green-500 mb-4"></i>
+                            <h3 class="font-bold text-xl">Mental Fortitude</h3>
+                        </div>
+                        <div class="space-y-3">
+                            <div class="bg-red-50 p-3 rounded-lg">
+                                <p class="font-medium text-red-800">Old Interpretation:</p>
+                                <p class="text-sm text-red-600">Challenge signal = Stop</p>
+                            </div>
+                            <div class="flex justify-center">
+                                <i class="fas fa-arrow-down text-2xl text-gray-400"></i>
+                            </div>
+                            <div class="bg-green-50 p-3 rounded-lg">
+                                <p class="font-medium text-green-800">New Interpretation:</p>
+                                <p class="text-sm text-green-600">Challenge signal = Grow</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-900 text-white rounded-2xl p-8 shadow-custom">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Miyamoto Musashi's Principle</h3>
+                    <div class="text-center mb-6">
+                        <div class="philosophy-quote bg-transparent border border-white border-opacity-20">
+                            <p class="text-lg italic">
+                                "The true way of strategy is to train daily and fight as if in battle. Not train for battle. Train as battle."
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <i class="fas fa-sword text-3xl text-yellow-400 mb-4"></i>
+                            <h4 class="font-semibold mb-2">Every Session = War</h4>
+                            <p class="text-sm text-gray-300">Not preparation, but actual combat</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <i class="fas fa-repeat text-3xl text-blue-400 mb-4"></i>
+                            <h4 class="font-semibold mb-2">Every Rep = Battle</h4>
+                            <p class="text-sm text-gray-300">Each repetition is real conflict</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <i class="fas fa-trophy text-3xl text-green-400 mb-4"></i>
+                            <h4 class="font-semibold mb-2">Pain = Victory</h4>
+                            <p class="text-sm text-gray-300">The fighting itself transforms you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Part 4: The Current of Discipline -->
+        <section class="py-16 px-4 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="ancient-symbol bg-gradient-quinary mb-6">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h2 class="serif-font text-4xl md:text-5xl font-bold gradient-text mb-6">
+                        Part IV: Ryu - The Current of Discipline
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Creating unstoppable momentum through physics, not willpower
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                    <div class="bg-white rounded-2xl p-8 shadow-custom">
+                        <h3 class="text-2xl font-bold mb-6 text-red-600">The Decision Trap</h3>
+                        <div class="space-y-4">
+                            <div class="bg-red-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-red-800 mb-2">Daily Decision Fatigue</h4>
+                                <ul class="text-sm text-red-700 space-y-1">
+                                    <li>• Should I work out today?</li>
+                                    <li>• When should I start this project?</li>
+                                    <li>• Is today the day for that conversation?</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-orange-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-orange-800 mb-2">Glucose Depletion</h4>
+                                <p class="text-sm text-orange-700">Each decision burns glucose in your prefrontal cortex. By noon, you've made 300 decisions and you're depleted.</p>
+                            </div>
+                            
+                            <div class="bg-yellow-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-yellow-800 mb-2">The 9 PM Collapse</h4>
+                                <p class="text-sm text-yellow-700">Perfect eating all day, then destroying a bag of chips. Not weak - empty.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-8 shadow-custom">
+                        <h3 class="text-2xl font-bold mb-6 text-blue-600">The Flow Solution</h3>
+                        <div class="space-y-4">
+                            <div class="bg-blue-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-blue-800 mb-2">The Zen Archer Model</h4>
+                                <p class="text-sm text-blue-700">After 10,000 draws, the bow becomes his arm. Movement happens without thought, choice, or negotiation.</p>
+                            </div>
+                            
+                            <div class="bg-green-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-green-800 mb-2">Automatic Action</h4>
+                                <p class="text-sm text-green-700">Body knows the motion like legs know walking. No decision required, just action flowing into action.</p>
+                            </div>
+                            
+                            <div class="bg-purple-50 p-4 rounded-lg">
+                                <h4 class="font-semibold text-purple-800 mb-2">Newton's Physics</h4>
+                                <p class="text-sm text-purple-700">Objects in motion stay in motion. Staying in flow requires less energy than breaking and restarting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-tertiary text-white rounded-2xl p-8 shadow-custom mb-16">
+                    <h3 class="text-2xl font-bold mb-8 text-center">The 2-Minute Entry System</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                        <div class="text-center">
+                            <div class="bg-white bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <span class="font-bold text-2xl">1</span>
+                            </div>
+                            <h4 class="font-semibold mb-2">Brain Acceptance</h4>
+                            <p class="text-sm opacity-90">2 minutes doesn't threaten comfort zone</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="bg-white bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <span class="font-bold text-2xl">2</span>
+                            </div>
+                            <h4 class="font-semibold mb-2">No Resistance</h4>
+                            <p class="text-sm opacity-90">Small change ignored by defense systems</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="bg-white bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <span class="font-bold text-2xl">3</span>
+                            </div>
+                            <h4 class="font-semibold mb-2">Newton Takes Over</h4>
+                            <p class="text-sm opacity-90">2 minutes becomes 10, then 30</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="bg-white bg-opacity-20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                                <span class="font-bold text-2xl">4</span>
+                            </div>
+                            <h4 class="font-semibold mb-2">Current Created</h4>
+                            <p class="text-sm opacity-90">Physics, not willpower</p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="philosophy-quote bg-transparent border border-white border-opacity-20">
+                            <p class="text-lg">
+                                "The hardest part of any river is the source. Once it's flowing, it carves through mountains."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white rounded-2xl p-6 shadow-custom">
+                        <h3 class="text-xl font-bold mb-4 text-center">Amateur Approach</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-pause-circle text-red-500"></i>
+                                <span>Waits for inspiration</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-wind text-blue-500"></i>
+                                <span>Depends on motivation (wind)</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-question-circle text-yellow-500"></i>
+                                <span>Relies on feelings that may never come</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-6 shadow-custom">
+                        <h3 class="text-xl font-bold mb-4 text-center">Professional Approach</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-green-500"></i>
+                                <span>Creates momentum</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-rowing text-blue-500"></i>
+                                <span>Uses discipline (rowing)</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-cog text-purple-500"></i>
+                                <span>Depends on physics that never fails</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- Part 5: The Complete System -->
+        <section class="py-16 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <div class="ancient-symbol bg-gradient-primary mb-6">
+                        <i class="fas fa-torii-gate"></i>
+                    </div>
+                    <h2 class="serif-font text-4xl md:text-5xl font-bold gradient-text mb-6">
+                        Part V: The Complete Kushinryu System
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Three pillars working together to create someone unrecognizable
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+                    <!-- Pillar 1: Dawn Protocol -->
+                    <div class="bg-gradient-primary text-white rounded-2xl p-8 shadow-custom pillar-card">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-sun text-4xl mb-4"></i>
+                            <h3 class="text-2xl font-bold">Pillar I: Dawn Protocol</h3>
+                        </div>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                                <h4 class="font-semibold mb-2">The Rule</h4>
+                                <p class="text-sm">Hardest thing happens first</p>
+                            </div>
+                            
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                                <h4 class="font-semibold mb-2">The Timing</h4>
+                                <p class="text-sm">Feet hit floor → Moving toward difficulty</p>
+                            </div>
+                            
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                                <h4 class="font-semibold mb-2">No Negotiation</h4>
+                                <p class="text-sm">No phone, no preparation, no resistance</p>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <p class="font-semibold text-lg">
+                                Conquer your demon before 6 AM = Rest of day is victory lap
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pillar 2: Progressive Loading -->
+                    <div class="bg-gradient-secondary text-white rounded-2xl p-8 shadow-custom pillar-card">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-chart-line text-4xl mb-4"></i>
+                            <h3 class="text-2xl font-bold">Pillar II: Progressive Loading</h3>
+                        </div>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                                <h4 class="font-semibold mb-2">The Formula</h4>
+                                <p class="text-sm">Yesterday's maximum = Today's minimum</p>
+                            </div>
+                            
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                                <h4 class="font-semibold mb-2">The Secret</h4>
+                                <p class="text-sm">Never stop on round numbers</p>
+                            </div>
+                            
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                                <h4 class="font-semibold mb-2">Examples</h4>
+                                <p class="text-sm">10:07 not 10:00 • 21 not 20 reps</p>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <p class="font-semibold text-lg">
+                                Those 7 seconds = 7 minutes in 2 months
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- Pillar 3: Pleasure Delay -->
+                    <div class="bg-gradient-quaternary text-white rounded-2xl p-8 shadow-custom pillar-card">
+                        <div class="text-center mb-6">
+                            <i class="fas fa-hourglass-half text-4xl mb-4"></i>
+                            <h3 class="text-2xl font-bold">Pillar III: Pleasure Delay</h3>
+                        </div>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                                <h4 class="font-semibold mb-2">The Sequence</h4>
+                                <p class="text-sm">Reward comes after, never before</p>
+                            </div>
+                            
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                                <h4 class="font-semibold mb-2">Examples</h4>
+                                <p class="text-sm">Coffee after training • Netflix after work</p>
+                            </div>
+                            
+                            <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                                <h4 class="font-semibold mb-2">Result</h4>
+                                <p class="text-sm">Brain relearns ancient sequence</p>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <p class="font-semibold text-lg">
+                                Pain → Pleasure • Effort → Reward
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feedback Loop Visualization -->
+                <div class="bg-gray-900 text-white rounded-2xl p-8 shadow-custom mb-16">
+                    <h3 class="text-2xl font-bold mb-8 text-center">The Reinforcement Loop</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="text-center">
+                            <div class="bg-blue-500 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-sun text-2xl"></i>
+                            </div>
+                            <h4 class="font-semibold mb-2">Dawn Protocol</h4>
+                            <p class="text-sm text-gray-300">Creates initial momentum</p>
+                            <div class="mt-4">
+                                <i class="fas fa-arrow-right text-2xl text-yellow-400"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="bg-purple-500 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-chart-line text-2xl"></i>
+                            </div>
+                            <h4 class="font-semibold mb-2">Progressive Loading</h4>
+                            <p class="text-sm text-gray-300">Amplifies the momentum</p>
+                            <div class="mt-4">
+                                <i class="fas fa-arrow-right text-2xl text-yellow-400"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="bg-green-500 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <i class="fas fa-hourglass-half text-2xl"></i>
+                            </div>
+                            <h4 class="font-semibold mb-2">Pleasure Delay</h4>
+                            <p class="text-sm text-gray-300">Reinforces the pattern</p>
+                            <div class="mt-4">
+                                <i class="fas fa-arrow-down text-2xl text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="bg-gradient-quinary text-white p-6 rounded-lg inline-block">
+                            <h4 class="font-bold text-xl mb-2">System Runs Itself</h4>
+                            <p>Each pillar reinforces the others until addiction to hard things becomes automatic</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 30-Day Transformation Timeline -->
+                <div class="bg-white rounded-2xl p-8 shadow-custom">
+                    <h3 class="text-2xl font-bold mb-8 text-center">30-Day Transformation Timeline</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-red-500 text-white w-16 h-16 rounded-full flex items-center justify-center font-bold">
+                                1-7
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-lg">Week 1: Resistance Phase</h4>
+                                <p class="text-gray-600">Every session requires convincing. Internal negotiation and debate.</p>
+                                <div class="progress-indicator mt-2">
+                                    <div class="progress-fill" style="width: 25%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-yellow-500 text-white w-16 h-16 rounded-full flex items-center justify-center font-bold">
+                                8-14
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-lg">Week 2: Transition Phase</h4>
+                                <p class="text-gray-600">Resistance decreases. Some automatic movements begin.</p>
+                                <div class="progress-indicator mt-2">
+                                    <div class="progress-fill" style="width: 50%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-blue-500 text-white w-16 h-16 rounded-full flex items-center justify-center font-bold">
+                                15-21
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-lg">Week 3: Flow Phase</h4>
+                                <p class="text-gray-600">Body moves automatically. Current is established.</p>
+                                <div class="progress-indicator mt-2">
+                                    <div class="progress-fill" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center font-bold">
+                                22-30
+                            </div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-lg">Week 4: Identity Phase</h4>
+                                <p class="text-gray-600">Not discipline anymore - it's identity. You are the system.</p>
+                                <div class="progress-indicator mt-2">
+                                    <div class="progress-fill" style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Call to Action -->
+        <section class="py-16 px-4 bg-gray-900 text-white">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="ancient-symbol bg-gradient-primary mb-8" style="width: 80px; height: 80px; font-size: 2rem;">
+                    <i class="fas fa-torii-gate"></i>
+                </div>
+                
+                <h2 class="serif-font text-4xl md:text-5xl font-bold mb-6">
+                    The Choice Point
+                </h2>
+                
+                <div class="philosophy-quote bg-transparent border border-white border-opacity-20 mb-8">
+                    <p class="text-xl">
+                        Tomorrow morning, your alarm will ring. In that moment, you'll make the choice you always make or you'll enter the current.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-red-900 bg-opacity-50 p-6 rounded-lg">
+                        <h3 class="font-bold text-xl mb-4">The Old Path</h3>
+                        <ul class="text-left space-y-2 text-red-200">
+                            <li>• Negotiate with yourself daily</li>
+                            <li>• Rely on motivation that fades</li>
+                            <li>• Fight internal resistance</li>
+                            <li>• Stay trapped in comfort</li>
+                            <li>• Slow death disguised as life</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-green-900 bg-opacity-50 p-6 rounded-lg">
+                        <h3 class="font-bold text-xl mb-4">The Kushinryu Path</h3>
+                        <ul class="text-left space-y-2 text-green-200">
+                            <li>• Automatic action without negotiation</li>
+                            <li>• Physics-based momentum</li>
+                            <li>• Flow with natural forces</li>
+                            <li>• Addiction to hard things</li>
+                            <li>• Transformation through difficulty</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-primary p-8 rounded-2xl">
+                    <h3 class="text-2xl font-bold mb-4">The System Is Waiting</h3>
+                    <p class="text-lg mb-6">
+                        Kushinryu doesn't require belief, just entry. 2 minutes. The only question is whether you are ready.
+                    </p>
+                    
+                    <div class="text-center">
+                        <p class="text-xl font-semibold">
+                            You're either growing harder or growing softer.<br>
+                            Building or decaying.<br>
+                            Choosing pain or being chosen by it.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mt-12">
+                    <p class="text-lg text-gray-400">
+                        May you find strength in difficulty and flow in discipline.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
