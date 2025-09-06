@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyoshin: The Eastern Path to Transforming Ambition into Achievement</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #f8fafc;
+            line-height: 1.7;
+        }
+        
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-glow {
+            background: rgba(30, 41, 59, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(148, 163, 184, 0.1);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+        }
+        
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #fbbf24 20%, #f59e0b 50%, #d97706 80%, transparent 100%);
+            margin: 4rem 0;
+        }
+        
+        .philosophy-quote {
+            position: relative;
+            padding: 2rem;
+            background: linear-gradient(135deg, rgba(251, 191, 36, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%);
+            border-left: 4px solid #fbbf24;
+            margin: 2rem 0;
+        }
+        
+        .philosophy-quote::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            font-size: 4rem;
+            color: #fbbf24;
+            opacity: 0.3;
+        }
+        
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .section-number {
+            position: absolute;
+            top: -20px;
+            left: 0;
+            font-size: 8rem;
+            font-weight: 800;
+            color: rgba(251, 191, 36, 0.1);
+            z-index: -1;
+        }
+        
+        .key-concept {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 12px;
+        }
+        
+        .warning-concept {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 12px;
+        }
+        
+        .insight-highlight {
+            background: rgba(139, 92, 246, 0.1);
+            border: 1px solid rgba(139, 92, 246, 0.3);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 8px;
+            border-left: 4px solid #8b5cf6;
+        }
+        
+        .navigation-dots {
+            position: fixed;
+            right: 2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+        
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(148, 163, 184, 0.3);
+            margin: 8px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-dot.active {
+            background: #fbbf24;
+            transform: scale(1.2);
+        }
+        
+        .video-screenshot {
+            border-radius: 16px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(251, 191, 36, 0.3);
+        }
+        
+        .principle-card {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 1rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .principle-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            .navigation-dots {
+                display: none;
+            }
+            .card-glow {
+                background: white;
+                border: 1px solid #ccc;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation-dots">
+        <div class="nav-dot active" data-section="hero"></div>
+        <div class="nav-dot" data-section="part1"></div>
+        <div class="nav-dot" data-section="part2"></div>
+        <div class="nav-dot" data-section="part3"></div>
+        <div class="nav-dot" data-section="part4"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center px-8 py-16 animate-fade-in">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="mb-8">
+                <h1 class="text-7xl md:text-8xl font-bold serif-font gradient-text mb-6">
+                    行心道
+                </h1>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">
+                    Gyoshin: The Eastern Path to Achievement
+                </h2>
+                <p class="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+                    Transforming Ambitious Procrastinators into Consistent Achievers Through Ancient Eastern Wisdom
+                </p>
+            </div>
+            
+            <div class="card-glow rounded-2xl p-8 max-w-4xl mx-auto">
+                <img src="https://https://i.ytimg.com/vi/_5g09wlF2pY/hq720.jpg" 
+                     alt="Gyoshin Philosophy Video" 
+                     class="w-full video-screenshot mb-6">
+                
+                <div class="philosophy-quote">
+                    <p class="text-lg italic text-slate-200">
+                        "If you're ambitious but lazy, that combination makes sense once you understand Gyoshin. 
+                        Your laziness is intelligence, not weakness. Your mind is protecting you from wasting energy on misaligned action."
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                    <div class="text-left">
+                        <h3 class="text-2xl font-semibold gradient-text mb-3">
+                            <i class="fas fa-yin-yang mr-3"></i>Gyo (行)
+                        </h3>
+                        <p class="text-slate-300">Disciplined Action - The practice of consistent, purposeful movement toward your goals</p>
+                    </div>
+                    <div class="text-left">
+                        <h3 class="text-2xl font-semibold gradient-text mb-3">
+                            <i class="fas fa-eye mr-3"></i>Shin (心)
+                        </h3>
+                        <p class="text-slate-300">Conscious Awareness - The ability to observe your patterns and align with your natural rhythm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Part 1: Intelligence of Resistance -->
+    <section id="part1" class="px-8 py-16 animate-fade-in">
+        <div class="max-w-6xl mx-auto">
+            <div class="relative">
+                <div class="section-number">01</div>
+                <h2 class="text-5xl font-bold serif-font gradient-text mb-8">
+                    <i class="fas fa-brain mr-4"></i>The Intelligence of Resistance
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+                <div class="lg:col-span-2">
+                    <div class="philosophy-quote">
+                        <p class="text-lg">
+                            "The Tao Te Ching states: 'The wise man does not attempt anything very big and thus achieves greatness.' 
+                            The most profound text in Eastern philosophy is telling you that forcing yourself is the problem, not the solution."
+                        </p>
+                    </div>
+                    
+                    <p class="text-lg text-slate-200 mb-6 leading-relaxed">
+                        When you avoid a task, you're experiencing what Taoist masters call <strong class="gradient-text">Ziran</strong> - natural spontaneity. 
+                        Your resistance isn't weakness, it's intelligence. Your mind is protecting you from wasting energy on misaligned action.
+                    </p>
+                </div>
+                
+                <div class="key-concept">
+                    <h4 class="text-xl font-semibold text-green-400 mb-3">
+                        <i class="fas fa-lightbulb mr-2"></i>Key Insight
+                    </h4>
+                    <p class="text-slate-200">
+                        Your resistance might be wisdom recognizing bad timing, not laziness avoiding hard work.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="principle-card">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-moon mr-3"></i>The Moon Forger Story
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-semibold text-slate-200 mb-4">The Struggle</h4>
+                        <ul class="space-y-2 text-slate-300">
+                            <li><i class="fas fa-times text-red-400 mr-2"></i>Months of traditional dawn practice</li>
+                            <li><i class="fas fa-times text-red-400 mr-2"></i>Perfect technique, broken blades</li>
+                            <li><i class="fas fa-times text-red-400 mr-2"></i>Fighting against natural rhythm</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold text-slate-200 mb-4">The Breakthrough</h4>
+                        <ul class="space-y-2 text-slate-300">
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Working alone at night, naturally</li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Master recognized the shift</li>
+                            <li><i class="fas fa-check text-green-400 mr-2"></i>Became the legendary "Moon Forger"</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="insight-highlight mt-6">
+                    <p class="text-slate-200">
+                        <i class="fas fa-quote-left mr-2 text-purple-400"></i>
+                        <strong>Master's Wisdom:</strong> "Why force the morning schedule?" The apprentice switched to night forging 
+                        and became legendary by honoring his natural rhythm instead of fighting it.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                <div class="principle-card">
+                    <h4 class="text-2xl font-semibold gradient-text mb-4">
+                        <i class="fas fa-turtle mr-3"></i>Zhuangzi's Wisdom
+                    </h4>
+                    <p class="text-slate-200 mb-4">
+                        Offered the position of prime minister - ultimate power and prestige in ancient China - he declined, 
+                        saying he preferred to "drag his tail in the mud like a turtle."
+                    </p>
+                    <div class="warning-concept">
+                        <p class="text-red-200">
+                            <i class="fas fa-exclamation-triangle mr-2"></i>
+                            His contemporaries called him unmotivated. Those contemporaries are forgotten. 
+                            Zhuangzi's wisdom still guides us 2,000 years later.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="principle-card">
+                    <h4 class="text-2xl font-semibold gradient-text mb-4">
+                        <i class="fas fa-paint-brush mr-3"></i>Calligraphy Masters
+                    </h4>
+                    <p class="text-slate-200 mb-4">
+                        Japanese calligraphy masters teach: "The brush moves when it wants to move. 
+                        Force the stroke, ruin the character. Hesitate too long, miss the moment."
+                    </p>
+                    <div class="key-concept">
+                        <p class="text-green-200">
+                            <i class="fas fa-yin-yang mr-2"></i>
+                            This is the Gyoshin connection: Gyo provides readiness, Shin provides timing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="philosophy-quote mt-8">
+                <p class="text-lg text-slate-200">
+                    "The I Ching calls this <strong class="gradient-text">Shi</strong> - perfect timing. You can have flawless technique and iron discipline. 
+                    Act at the wrong moment, you fail. Your resistance might be wisdom recognizing bad timing, not laziness avoiding hard work."
+                </p>
+            </div>
+            
+            <div class="principle-card mt-8">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-chess-king mr-3"></i>Han Xin: The Patient General
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-red-400 mb-2">3 Years</div>
+                        <p class="text-slate-300">Of apparent inaction</p>
+                        <p class="text-sm text-slate-400">Peers saw laziness</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-yellow-400 mb-2">Reading</div>
+                        <p class="text-slate-300">The moment</p>
+                        <p class="text-sm text-slate-400">Waiting for perfect timing</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-green-400 mb-2">18 Months</div>
+                        <p class="text-slate-300">Conquered all of China</p>
+                        <p class="text-sm text-slate-400">Fastest campaign in Chinese history</p>
+                    </div>
+                </div>
+                
+                <div class="insight-highlight mt-6">
+                    <p class="text-slate-200 text-center text-xl">
+                        <strong>3 years of "nothing" enabled the fastest military campaign in Chinese history</strong>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="warning-concept mt-8">
+                <h4 class="text-xl font-semibold text-red-300 mb-3">
+                    <i class="fas fa-exclamation-circle mr-2"></i>Why Forced Discipline Fails
+                </h4>
+                <ul class="space-y-2 text-red-200">
+                    <li>• Rigid routines collapse because they violate natural law</li>
+                    <li>• Productivity systems leave you exhausted when they fight your nature</li>
+                    <li>• You're not broken - you're violating natural order</li>
+                    <li>• Lao Tzu called resistance your connection to the Tao itself</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Part 2: Minimal Effective Dose -->
+    <section id="part2" class="px-8 py-16 animate-fade-in">
+        <div class="max-w-6xl mx-auto">
+            <div class="relative">
+                <div class="section-number">02</div>
+                <h2 class="text-5xl font-bold serif-font gradient-text mb-8">
+                    <i class="fas fa-target mr-4"></i>The Minimal Effective Dose
+                </h2>
+            </div>
+            
+            <div class="philosophy-quote mb-8">
+                <p class="text-xl text-slate-200">
+                    "The laziest people often accomplish the most. Gyo teaches us that one perfect sword stroke 
+                    beats a thousand wild swings. But here's what most people miss: You still need to practice that one stroke a thousand times."
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="principle-card">
+                    <h3 class="text-2xl font-semibold gradient-text mb-6">
+                        <i class="fas fa-bow-arrow mr-3"></i>Master Archer vs Beginner
+                    </h3>
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-red-400 pl-4">
+                            <h4 class="text-lg font-semibold text-red-300 mb-2">The Beginner</h4>
+                            <ul class="text-slate-300 space-y-1">
+                                <li>• Shoots hundreds of arrows</li>
+                                <li>• Tries different stances, different grips</li>
+                                <li>• Exhausting themselves with variation</li>
+                                <li>• <strong class="text-red-400">Who worked harder? The beginner</strong></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="border-l-4 border-green-400 pl-4">
+                            <h4 class="text-lg font-semibold text-green-300 mb-2">The Master</h4>
+                            <ul class="text-slate-300 space-y-1">
+                                <li>• Shoots 50 arrows with identical form</li>
+                                <li>• Every arrow hits the target</li>
+                                <li>• Effortless precision through repetition</li>
+                                <li>• <strong class="text-green-400">Who accomplished more? The master</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="insight-highlight mt-6">
+                        <p class="text-slate-200">
+                            <strong>The Paradox:</strong> Effortless achievement requires tremendous effort, just intelligently applied.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="principle-card">
+                    <h3 class="text-2xl font-semibold gradient-text mb-6">
+                        <i class="fas fa-clock mr-3"></i>Parkinson's Law in Action
+                    </h3>
+                    <p class="text-slate-200 mb-6">
+                        Work expands to fill the time available. This mathematical principle proves the power of constraints.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="bg-red-900/30 border border-red-400/30 p-4 rounded-lg">
+                            <h4 class="text-red-300 font-semibold mb-2">2 Hours Given</h4>
+                            <p class="text-slate-300">90 minutes procrastinating + 30 minutes panicking = Poor results</p>
+                        </div>
+                        
+                        <div class="bg-green-900/30 border border-green-400/30 p-4 rounded-lg">
+                            <h4 class="text-green-300 font-semibold mb-2">10 Minutes Given</h4>
+                            <p class="text-slate-300">Pure concentration = Often more accomplished than 2 distracted hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="key-concept mt-6">
+                        <p class="text-green-200">
+                            <i class="fas fa-scalpel mr-2"></i>
+                            This isn't about working less. It's about working with surgical precision.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="principle-card mb-8">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-torii-gate mr-3"></i>The Samurai Way: Hagakure Wisdom
+                </h3>
+                
+                <div class="philosophy-quote">
+                    <p class="text-lg text-slate-200">
+                        "In the way of the samurai, if one uses discrimination, he will fall behind. 
+                        One needs neither loyalty nor devotion, but simply to become one with the intent."
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                    <div class="text-center">
+                        <div class="text-3xl mb-3"><i class="fas fa-bullseye text-yellow-400"></i></div>
+                        <h4 class="text-lg font-semibold text-slate-200 mb-2">Singular Focus</h4>
+                        <p class="text-slate-300 text-sm">That intent, that focus transforms minimal effort into maximum results</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-3xl mb-3"><i class="fas fa-arrows-to-dot text-blue-400"></i></div>
+                        <h4 class="text-lg font-semibold text-slate-200 mb-2">Eliminate Waste</h4>
+                        <p class="text-slate-300 text-sm">You're not doing less work, you're eliminating wasted motion</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-3xl mb-3"><i class="fas fa-infinity text-purple-400"></i></div>
+                        <h4 class="text-lg font-semibrel text-slate-200 mb-2">Depth Over Breadth</h4>
+                        <p class="text-slate-300 text-sm">Find your thread and pull it - depth beats breadth every time</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="principle-card mb-8">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-seedling mr-3"></i>Morihei Ueshiba: The Aikido Master
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="warning-concept">
+                            <h4 class="text-red-300 font-semibold mb-3">
+                                <i class="fas fa-users mr-2"></i>What People Thought
+                            </h4>
+                            <p class="text-red-200">
+                                When Ueshiba practiced the same movement 10,000 times, people thought he was wasting his talent. 
+                                Western productivity culture saw limitation.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="key-concept">
+                            <h4 class="text-green-300 font-semibold mb-3">
+                                <i class="fas fa-trophy mr-2"></i>The Reality
+                            </h4>
+                            <p class="text-green-200">
+                                Those people are forgotten. Ueshiba's art is still changing lives. 
+                                One movement, perfected, became a complete martial art.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-glow rounded-2xl p-8 mb-8">
+                <h3 class="text-3xl font-semibold gradient-text mb-6 text-center">
+                    <i class="fas fa-chart-line mr-3"></i>The Compound Effect: 1% Daily Improvement
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="text-center mb-6">
+                            <div class="text-6xl font-bold gradient-text mb-2">37x</div>
+                            <p class="text-slate-300">Better after 1 year</p>
+                            <p class="text-sm text-slate-400">Not 37% - 37 times better</p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="bg-slate-800 p-3 rounded-lg">
+                                <div class="text-sm text-slate-400 mb-1">Your Ego Wants</div>
+                                <div class="text-lg text-red-400 font-semibold">50% overnight improvement</div>
+                                <div class="text-sm text-red-300">Result: Failure every time</div>
+                            </div>
+                            
+                            <div class="bg-slate-800 p-3 rounded-lg">
+                                <div class="text-sm text-slate-400 mb-1">Reality Works With</div>
+                                <div class="text-lg text-green-400 font-semibold">1% daily improvement</div>
+                                <div class="text-sm text-green-300">Result: Exponential growth</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold text-slate-200 mb-4">
+                            <i class="fas fa-bamboo mr-2 text-green-400"></i>The Bamboo Tree Principle
+                        </h4>
+                        
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-yellow-400 pl-4">
+                                <div class="font-semibold text-yellow-300">Years 1-4</div>
+                                <p class="text-slate-300">Daily watering, nothing visible above ground</p>
+                            </div>
+                            
+                            <div class="border-l-4 border-green-400 pl-4">
+                                <div class="font-semibold text-green-300">Year 5</div>
+                                <p class="text-slate-300">90 feet of growth in 6 weeks</p>
+                            </div>
+                        </div>
+                        
+                        <div class="insight-highlight mt-4">
+                            <p class="text-slate-200">
+                                Those four years weren't wasted. The tree was building roots that could support massive growth. 
+                                Your minimal daily practice is building roots.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="principle-card text-center">
+                    <div class="text-3xl mb-3"><i class="fas fa-pen-nib text-blue-400"></i></div>
+                    <h4 class="text-lg font-semibold gradient-text mb-2">Writers</h4>
+                    <p class="text-slate-300">500 words daily</p>
+                </div>
+                
+                <div class="principle-card text-center">
+                    <div class="text-3xl mb-3"><i class="fas fa-fist-raised text-red-400"></i></div>
+                    <h4 class="text-lg font-semibold gradient-text mb-2">Fighters</h4>
+                    <p class="text-slate-300">One combination perfected</p>
+                </div>
+                
+                <div class="principle-card text-center">
+                    <div class="text-3xl mb-3"><i class="fas fa-phone text-green-400"></i></div>
+                    <h4 class="text-lg font-semibold gradient-text mb-2">Builders</h4>
+                    <p class="text-slate-300">One sales call daily</p>
+                </div>
+            </div>
+            
+            <div class="philosophy-quote mt-8">
+                <p class="text-lg text-slate-200">
+                    "The Tao Te Ching warns: 'The flame that burns twice as bright burns half as long.' 
+                    Your motivation bursts are the too-bright flame. The minimal effective dose burns steady, 
+                    matches your natural capacity, then slowly expands it day by day - invisible, unstoppable."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Part 3: Environmental Architecture -->
+    <section id="part3" class="px-8 py-16 animate-fade-in">
+        <div class="max-w-6xl mx-auto">
+            <div class="relative">
+                <div class="section-number">03</div>
+                <h2 class="text-5xl font-bold serif-font gradient-text mb-8">
+                    <i class="fas fa-building mr-4"></i>Environmental Architecture
+                </h2>
+            </div>
+            
+            <div class="philosophy-quote mb-8">
+                <p class="text-xl text-slate-200">
+                    "Willpower is finite. Environment is infinite. Most people don't understand what environment really means, 
+                    and that's why they fail."
+                </p>
+            </div>
+            
+            <div class="card-glow rounded-2xl p-8 mb-8">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-water mr-3"></i>Environment: The Invisible Water You Swim In
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-semibold text-slate-200 mb-4">Environment Isn't Just Physical</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-users text-blue-400"></i>
+                                <span class="text-slate-300">The people you spend time with</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-tv text-purple-400"></i>
+                                <span class="text-slate-300">The content you consume</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-comments text-green-400"></i>
+                                <span class="text-slate-300">The conversations you have</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-brain text-yellow-400"></i>
+                                <span class="text-slate-300">The thoughts you rehearse</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold text-slate-200 mb-4">The Shin Principle</h4>
+                        <div class="key-concept">
+                            <p class="text-green-200">
+                                <i class="fas fa-eye mr-2"></i>
+                                Awareness of your patterns lets you build around them, not through them.
+                            </p>
+                        </div>
+                        
+                        <div class="warning-concept mt-4">
+                            <p class="text-red-200">
+                                <i class="fas fa-exclamation-triangle mr-2"></i>
+                                Most people are drowning in poison without realizing it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="principle-card mb-8">
+                <h3 class="text-2xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-chart-pie mr-3"></i>The 99% vs The 1%
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="border-l-4 border-red-400 pl-6">
+                        <h4 class="text-xl font-semibold text-red-300 mb-4">
+                            <i class="fas fa-users mr-2"></i>The 99% - Predictable Pattern
+                        </h4>
+                        <ul class="space-y-3 text-red-200">
+                            <li><i class="fas fa-mobile-alt mr-2"></i>Wake up, immediately check phone</li>
+                            <li><i class="fas fa-robot mr-2"></i>Consume whatever algorithm feeds them</li>
+                            <li><i class="fas fa-tv mr-2"></i>Fill quiet moments with digital noise</li>
+                            <li><i class="fas fa-question-circle mr-2"></i>Wonder why they feel empty</li>
+                        </ul>
+                        
+                        <div class="warning-concept mt-4">
+                            <p class="text-red-200">
+                                <strong>You think you're different while doing exactly what everyone else does. 
+                                You're not special. You're predictable.</strong>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="border-l-4 border-green-400 pl-6">
+                        <h4 class="text-xl font-semibold text-green-300 mb-4">
+                            <i class="fas fa-crown mr-2"></i>The 1% - Intentional Architecture
+                        </h4>
+                        <ul class="space-y-3 text-green-200">
+                            <li><i class="fas fa-podcast mr-2"></i>Replace scrolling with philosophy podcasts</li>
+                            <li><i class="fas fa-film mr-2"></i>Swap reality TV for achievement documentaries</li>
+                            <li><i class="fas fa-shield-alt mr-2"></i>Make garbage content impossible to access</li>
+                            <li><i class="fas fa-utensils mr-2"></i>Architect consumption like a master chef</li>
+                        </ul>
+                        
+                        <div class="key-concept mt-4">
+                            <p class="text-green-200">
+                                <strong>They don't rely on willpower to avoid junk. They make it impossible to access.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="principle-card mb-8">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-moon mr-3"></i>The Moon Forger's Environmental Shift
+                </h3>
+                
+                <p class="text-slate-200 mb-6">
+                    His environmental shift wasn't just about time of day. He removed himself from:
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3 text-slate-300">
+                            <i class="fas fa-users-slash text-red-400"></i>
+                            <span>The morning crowd</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-slate-300">
+                            <i class="fas fa-comments-dollar text-red-400"></i>
+                            <span>The chatter and comparison</span>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3 text-slate-300">
+                            <i class="fas fa-graduation-cap text-red-400"></i>
+                            <span>Conventional wisdom</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-slate-300">
+                            <i class="fas fa-seedling text-green-400"></i>
+                            <span>Created sanctuary for natural rhythm</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="insight-highlight mt-6">
+                    <p class="text-slate-200">
+                        <strong>Environmental Architecture:</strong> Not just moving your phone to another room, 
+                        but creating conditions where your true nature can emerge.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card-glow rounded-2xl p-8 mb-8">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-cogs mr-3"></i>Specific Environmental Changes
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="principle-card bg-red-900/20 border-red-400/30">
+                        <h4 class="text-lg font-semibold text-red-300 mb-4">
+                            <i class="fas fa-mobile-alt mr-2"></i>That Phone Beside Your Bed
+                        </h4>
+                        <p class="text-red-200 text-sm">
+                            Not just disrupting sleep - programming your mind to seek stimulation 
+                            the moment consciousness returns.
+                        </p>
+                    </div>
+                    
+                    <div class="principle-card bg-yellow-900/20 border-yellow-400/30">
+                        <h4 class="text-lg font-semibold text-yellow-300 mb-4">
+                            <i class="fas fa-play-circle mr-2"></i>Motivational Videos
+                        </h4>
+                        <p class="text-yellow-200 text-sm">
+                            If not connected to specific action, they're just entertainment 
+                            masquerading as growth.
+                        </p>
+                    </div>
+                    
+                    <div class="principle-card bg-purple-900/20 border-purple-400/30">
+                        <h4 class="text-lg font-semibold text-purple-300 mb-4">
+                            <i class="fas fa-users mr-2"></i>Complaint Partners
+                        </h4>
+                        <p class="text-purple-200 text-sm">
+                            People you complain with about how hard life is - 
+                            they're anchoring you to exactly where you are.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="principle-card mb-8">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-physics mr-3"></i>The Friction Principle
+                </h3>
+                
+                <p class="text-slate-200 mb-6">
+                    Simple physics applied to behavior: <strong>Make bad habits hard, good habits automatic.</strong>
+                </p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-xl font-semibold text-red-300 mb-4">
+                            <i class="fas fa-times-circle mr-2"></i>Friction Against Good Habits
+                        </h4>
+                        <ul class="space-y-2 text-red-200">
+                            <li>• Searching for running shoes every morning</li>
+                            <li>• Having to prepare healthy food from scratch</li>
+                            <li>• Books buried in closets</li>
+                            <li>• Workout equipment in basement</li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold text-green-300 mb-4">
+                            <i class="fas fa-check-circle mr-2"></i>Friction Removed from Bad Habits
+                        </h4>
+                        <ul class="space-y-2 text-green-200">
+                            <li>• Junk food at eye level in kitchen</li>
+                            <li>• Phone apps readily accessible</li>
+                            <li>• TV remote within arm's reach</li>
+                            <li>• Comfortable couch facing screen</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="key-concept mt-6">
+                    <p class="text-green-200 text-center text-lg">
+                        <i class="fas fa-lightbulb mr-2"></i>
+                        <strong>Masters don't rely on motivation. They design their environment so the right choice is the only easy choice.</strong>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="principle-card">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-wind mr-3"></i>Feng Shui: The Ancient Understanding
+                </h3>
+                
+                <div class="philosophy-quote mb-6">
+                    <p class="text-lg text-slate-200">
+                        The ancient Chinese had a concept called <strong class="gradient-text">Feng Shui</strong> - literally "wind and water." 
+                        Not the watered-down version sold to Westerners, but the understanding that your environment shapes your destiny.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="key-concept">
+                        <h4 class="text-green-300 font-semibold mb-3">
+                            <i class="fas fa-sun mr-2"></i>Scholar's Study
+                        </h4>
+                        <p class="text-green-200">
+                            Should face east for morning light and new beginnings. 
+                            Natural energy aligned with learning and growth.
+                        </p>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4 class="text-green-300 font-semibold mb-3">
+                            <i class="fas fa-sword mr-2"></i>Warrior's Quarters
+                        </h4>
+                        <p class="text-green-200">
+                            Should be sparse, containing only what serves the mission. 
+                            Every detail influences the mind toward focus.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="warning-concept mt-6">
+                    <h4 class="text-red-300 font-semibold mb-3">
+                        <i class="fas fa-exclamation-triangle mr-2"></i>Why Most People Fail
+                    </h4>
+                    <p class="text-red-200">
+                        They treat environment as optional instead of foundational. They think they can overcome bad design with good intentions. 
+                        They can't. Nobody can. <strong>The environment always wins.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- Part 4: Integration Protocol -->
+    <section id="part4" class="px-8 py-16 animate-fade-in">
+        <div class="max-w-6xl mx-auto">
+            <div class="relative">
+                <div class="section-number">04</div>
+                <h2 class="text-5xl font-bold serif-font gradient-text mb-8">
+                    <i class="fas fa-puzzle-piece mr-4"></i>The Integration Protocol
+                </h2>
+            </div>
+            
+            <div class="philosophy-quote mb-8">
+                <p class="text-xl text-slate-200">
+                    "Everything you've learned means nothing if you can't bring Gyo and Shin together into one living system. 
+                    The synthesis is simpler than you think and harder than you'll expect."
+                </p>
+            </div>
+            
+            <div class="card-glow rounded-2xl p-8 mb-8">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-yin-yang mr-3"></i>What We've Discovered
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="text-4xl mb-3"><i class="fas fa-brain text-purple-400"></i></div>
+                        <h4 class="text-lg font-semibold text-slate-200 mb-2">Resistance Intelligence</h4>
+                        <p class="text-slate-300 text-sm">Your resistance contains intelligence. That's Shin showing you the way.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-4xl mb-3"><i class="fas fa-chart-line text-green-400"></i></div>
+                        <h4 class="text-lg font-semibold text-slate-200 mb-2">Compound Actions</h4>
+                        <p class="text-slate-300 text-sm">Small aligned actions compound exponentially. That's Gyo building your strength.</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-4xl mb-3"><i class="fas fa-cogs text-blue-400"></i></div>
+                        <h4 class="text-lg font-semibold text-slate-200 mb-2">Automatic Success</h4>
+                        <p class="text-slate-300 text-sm">Environmental architecture creates automatic success. That's both working together.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="principle-card mb-8">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-sun mr-3"></i>The Daily System: Morning Awareness Check
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="bg-gradient-to-r from-yellow-900/30 to-orange-900/30 border border-yellow-400/30 p-6 rounded-lg">
+                            <h4 class="text-xl font-semibold text-yellow-300 mb-4">
+                                <i class="fas fa-clock mr-2"></i>2-Minute Check (That's It!)
+                            </h4>
+                            
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-yellow-400 pl-4">
+                                    <p class="text-yellow-200 font-medium">What's my energy telling me today?</p>
+                                </div>
+                                <div class="border-l-4 border-orange-400 pl-4">
+                                    <p class="text-orange-200 font-medium">Where's my natural focus pulling me?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="warning-concept">
+                            <h4 class="text-red-300 font-semibold mb-3">
+                                <i class="fas fa-times mr-2"></i>This Is NOT
+                            </h4>
+                            <ul class="text-red-200 space-y-2">
+                                <li>• Meditation</li>
+                                <li>• Journaling</li>
+                                <li>• Self-improvement ritual</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="key-concept mt-4">
+                            <h4 class="text-green-300 font-semibold mb-3">
+                                <i class="fas fa-search mr-2"></i>This IS
+                            </h4>
+                            <p class="text-green-200">
+                                <strong>Reconnaissance.</strong> Gathering intel about your internal state 
+                                so you can align actions with reality, not fantasy.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="principle-card mb-8">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-moon mr-3"></i>Evening Review: Your Practice, Not Productivity
+                </h3>
+                
+                <div class="bg-gradient-to-r from-blue-900/30 to-purple-900/30 border border-blue-400/30 p-6 rounded-lg">
+                    <h4 class="text-xl font-semibold text-blue-300 mb-6">Three Core Questions</h4>
+                    
+                    <div class="space-y-6">
+                        <div class="border-l-4 border-blue-400 pl-6">
+                            <h5 class="font-semibold text-blue-200 mb-2">
+                                <i class="fas fa-water mr-2"></i>Natural Rhythm Check
+                            </h5>
+                            <p class="text-slate-300">Did you honor your natural rhythm or fight it?</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-purple-400 pl-6">
+                            <h5 class="font-semibold text-purple-200 mb-2">
+                                <i class="fas fa-home mr-2"></i>Environmental Support
+                            </h5>
+                            <p class="text-slate-300">Did your environment support you or sabotage you?</p>
+                        </div>
+                        
+                        <div class="border-l-4 border-green-400 pl-6">
+                            <h5 class="font-semibold text-green-200 mb-2">
+                                <i class="fas fa-arrows-alt mr-2"></i>Pattern Alignment
+                            </h5>
+                            <p class="text-slate-300">Did you work with your patterns or against them?</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="insight-highlight mt-6">
+                    <p class="text-slate-200 text-lg">
+                        <i class="fas fa-refresh mr-2 text-blue-400"></i>
+                        <strong>This creates a feedback loop based on actual results, not feelings. Results don't lie. Feelings do.</strong>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="principle-card mb-8">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-torii-gate mr-3"></i>Kaizen: The Samurai Method
+                </h3>
+                
+                <div class="philosophy-quote mb-6">
+                    <p class="text-lg text-slate-200">
+                        "The samurai called this <strong class="gradient-text">Kaizen</strong> - continuous improvement. 
+                        Not dramatic overhaul, not revolutionary change, just persistent refinement based on what actually works for you."
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="text-center">
+                        <div class="text-3xl mb-3"><i class="fas fa-times text-red-400"></i></div>
+                        <h4 class="text-lg font-semibold text-red-300 mb-2">Not This</h4>
+                        <p class="text-slate-300 text-sm">Copying someone else's morning routine</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-3xl mb-3"><i class="fas fa-arrow-right text-yellow-400"></i></div>
+                        <h4 class="text-lg font-semibold text-yellow-300 mb-2">Instead</h4>
+                        <p class="text-slate-300 text-sm">Discovering your own system through observation</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-3xl mb-3"><i class="fas fa-check text-green-400"></i></div>
+                        <h4 class="text-lg font-semibold text-green-300 mb-2">Result</h4>
+                        <p class="text-slate-300 text-sm">Continuous adjustment and refinement</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-glow rounded-2xl p-8 mb-8">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-meditation mr-3"></i>The Zen Master's Secret
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <div class="text-center mb-6">
+                            <div class="text-6xl font-bold gradient-text mb-2">60</div>
+                            <p class="text-slate-300">Years of practice</p>
+                        </div>
+                        
+                        <div class="philosophy-quote">
+                            <p class="text-lg text-slate-200">
+                                Someone asked a Zen master how he maintained his practice for 60 years. 
+                                He said: "I don't maintain it, it maintains me."
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-xl font-semibold text-slate-200 mb-4">The Difference</h4>
+                        
+                        <div class="space-y-4">
+                            <div class="border-l-4 border-red-400 pl-4">
+                                <h5 class="text-red-300 font-semibold mb-1">Forcing a Routine</h5>
+                                <ul class="text-red-200 text-sm space-y-1">
+                                    <li>• Drains you</li>
+                                    <li>• Needs constant willpower</li>
+                                    <li>• Eventually collapses</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-l-4 border-green-400 pl-4">
+                                <h5 class="text-green-300 font-semibold mb-1">Discovering Your Rhythm</h5>
+                                <ul class="text-green-200 text-sm space-y-1">
+                                    <li>• Fuels you</li>
+                                    <li>• Becomes automatic</li>
+                                    <li>• Maintains itself</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="principle-card mb-8">
+                <h3 class="text-3xl font-semibold gradient-text mb-6">
+                    <i class="fas fa-mountain mr-3"></i>The I Ching Warning
+                </h3>
+                
+                <div class="philosophy-quote mb-6">
+                    <p class="text-lg text-slate-200">
+                        "The I Ching says: 'Difficulty at the beginning works supreme success.' 
+                        Your first few weeks will feel weird."
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="warning-concept">
+                        <h4 class="text-red-300 font-semibold mb-3">
+                            <i class="fas fa-exclamation-triangle mr-2"></i>What to Expect
+                        </h4>
+                        <ul class="text-red-200 space-y-2">
+                            <li>• Falling back into old patterns</li>
+                            <li>• Forcing productivity instead of flowing</li>
+                            <li>• Comparing yourself to others</li>
+                            <li>• Ignoring your resistance signals</li>
+                        </ul>
+                        
+                        <p class="text-red-200 mt-4 font-semibold">
+                            <i class="fas fa-info-circle mr-2"></i>Normal. Expected.
+                        </p>
+                    </div>
+                    
+                    <div class="key-concept">
+                        <h4 class="text-green-300 font-semibold mb-3">
+                            <i class="fas fa-compass mr-2"></i>The Difference Now
+                        </h4>
+                        <p class="text-green-200 mb-4">
+                            You have a system for catching yourself and realigning.
+                        </p>
+                        
+                        <div class="bg-green-900/30 p-4 rounded-lg">
+                            <p class="text-green-200 font-medium">
+                                <i class="fas fa-lightbulb mr-2"></i>
+                                The system gives you awareness and tools for course correction, 
+                                not perfection from day one.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-glow rounded-2xl p-8">
+                <h3 class="text-4xl font-bold serif-font gradient-text mb-8 text-center">
+                    <i class="fas fa-crown mr-3"></i>The Final Choice
+                </h3>
+                
+                <div class="philosophy-quote mb-8">
+                    <p class="text-xl text-slate-200 text-center">
+                        "Listen carefully. You're not fixing laziness because you were never lazy. 
+                        You're aligning with your nature. That ambitious but lazy combination that brought you here? 
+                        That's not a bug. That's your system screaming that there's a better way."
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="border-l-4 border-red-400 pl-6">
+                        <h4 class="text-2xl font-semibold text-red-300 mb-4">
+                            <i class="fas fa-frown mr-3"></i>Keep Fighting Yourself
+                        </h4>
+                        <ul class="text-red-200 space-y-2">
+                            <li>• Wake up each day to battle your own nature</li>
+                            <li>• Exhaust yourself trying to be someone you're not</li>
+                            <li>• Continue the endless cycle of motivation and burnout</li>
+                            <li>• Stay trapped in conventional productivity myths</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="border-l-4 border-green-400 pl-6">
+                        <h4 class="text-2xl font-semibold text-green-300 mb-4">
+                            <i class="fas fa-smile mr-3"></i>Work With Yourself
+                        </h4>
+                        <ul class="text-green-200 space-y-2">
+                            <li>• Start aligning with your natural patterns today</li>
+                            <li>• Use your resistance as intelligent guidance</li>
+                            <li>• Build systems that work with, not against, your nature</li>
+                            <li>• Express your unique nature more effectively</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <div class="inline-block bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-8 py-4 rounded-lg font-bold text-xl">
+                        <i class="fas fa-bolt mr-3"></i>The choice is simple. Not easy, but simple.
+                    </div>
+                </div>
+                
+                <div class="philosophy-quote mt-8">
+                    <p class="text-lg text-slate-200 text-center">
+                        "The path of Gyoshin isn't about becoming someone new. It's about becoming who you always were, 
+                        just with better strategy. The samurai didn't train to become warriors. They trained to express 
+                        their warrior nature more perfectly."
+                    </p>
+                </div>
+                
+                <div class="insight-highlight mt-6">
+                    <div class="text-center">
+                        <h4 class="text-2xl font-semibold gradient-text mb-4">Your Resistance Was Never The Enemy</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                            <div>
+                                <div class="text-3xl mb-2"><i class="fas fa-teacher text-blue-400"></i></div>
+                                <p class="text-slate-300">It was the teacher</p>
+                            </div>
+                            <div>
+                                <div class="text-3xl mb-2"><i class="fas fa-heart text-red-400"></i></div>
+                                <p class="text-slate-300">Your spirit rejecting broken systems</p>
+                            </div>
+                            <div>
+                                <div class="text-3xl mb-2"><i class="fas fa-key text-yellow-400"></i></div>
+                                <p class="text-slate-300">The key to your authentic path</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-8">
+                    <h3 class="text-3xl font-bold gradient-text mb-4">
+                        Now you have a system built from Eastern wisdom and designed for your nature.
+                    </h3>
+                    
+                    <div class="bg-gradient-to-r from-purple-600 to-blue-600 text-white px-12 py-6 rounded-lg inline-block">
+                        <p class="text-2xl font-bold">
+                            <i class="fas fa-stop-circle mr-3"></i>Stop talking about it.
+                        </p>
+                        <p class="text-2xl font-bold">
+                            <i class="fas fa-stop-circle mr-3"></i>Stop thinking about it.
+                        </p>
+                        <p class="text-3xl font-bold text-yellow-300 mt-4">
+                            <i class="fas fa-play-circle mr-3"></i>Use it.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="px-8 py-16 text-center">
+        <div class="section-divider mb-8"></div>
+        <div class="max-w-4xl mx-auto">
+            <h3 class="text-3xl font-bold serif-font gradient-text mb-6">行心道</h3>
+            <p class="text-slate-400 mb-4">Gyoshin: The Eastern Path to Transforming Ambition into Achievement</p>
+            <p class="text-sm text-slate-500">A comprehensive analysis of Eastern wisdom for modern productivity challenges</p>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation dot functionality
+        const sections = document.querySelectorAll('section');
+        const navDots = document.querySelectorAll('.nav-dot');
+        
+        // Update active dot based on scroll position
+        function updateActiveDot() {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navDots.forEach(dot => {
+                dot.classList.remove('active');
+                if (dot.getAttribute('data-section') === current) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+        
+        // Smooth scroll to section when dot is clicked
+        navDots.forEach(dot => {
+            dot.addEventListener('click', (e) => {
+                const targetSection = document.getElementById(e.target.getAttribute('data-section'));
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Update dots on scroll
+        window.addEventListener('scroll', updateActiveDot);
+        
+        // Initialize
+        updateActiveDot();
+        
+        // Add fade-in animation to elements as they come into view
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.principle-card, .key-concept, .warning-concept').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+
